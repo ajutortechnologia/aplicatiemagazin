@@ -12,6 +12,7 @@ const bodyParser = require('body-parser');
 
 const indexRouter = require('./routes/index');
 const customerRouter = require('./routes/customers');
+const repairRouter = require('./routes/repairs');
 
 
 
@@ -35,6 +36,7 @@ db.once('open', () => console.log('Connected to Mongoose'));
 
 app.use('/', indexRouter);
 app.use('/customers', customerRouter);
+app.use('/repairs', repairRouter);
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('Server running on port 3000');

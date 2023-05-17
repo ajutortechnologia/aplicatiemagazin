@@ -16,6 +16,14 @@ router.get('/new', (req, res) => {
     res.render('customers/new', { customer: new Customer() });
 });
 
+//View Customer Route
+
+router.get('/:id', async (req, res) => {
+    const customer = await Customer.findById(req.params.id);
+    if (customer == null) res.redirect('/');
+    res.render('customers/show', { customer: customer });
+});
+
 //Create Customer Route
 
 router.post('/', async (req, res) => {

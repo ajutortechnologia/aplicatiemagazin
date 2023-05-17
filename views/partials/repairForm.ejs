@@ -1,0 +1,38 @@
+<div class="mb-3">
+    <label for="deviceName" class="form-label">Nume dispozitiv</label>
+    <input type="text" class="form-control" id="deviceName" name="deviceName" value="<%= repair.deviceName %>" required>
+  </div>
+  <div class="mb-3">
+    <select class="form-select" aria-label="Default select example" id="deviceType" name="deviceType" required>
+      <option selected>Alege tipul dispozitivului!</option>
+      <option value="Telefon">Telefon</option>
+      <option value="Laptop">Laptop</option>
+      <option value="Tableta">Tableta</option>
+      <option value="Televizor">Televizor</option>
+      <option value="Alte dispozitive">Alte dispozitive</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <select class="form-select" aria-label="Default select example" id="deviceBrand" name="deviceBrand" required>
+      <option selected>Alege brandul!</option>
+      <option value="Apple">Apple</option>
+      <option value="Samsung">Samsung</option>
+      <option value="Huawei">Huawei</option>
+      <option value="Xiaomi">Xiaomi</option>
+      <option value="Lenovo">Lenovo</option>
+      <option value="Asus">Asus</option>
+      <option value="Lg">Lg</option>
+      <option value="Sony">Sony</option>
+      <option value="Philips">Philips</option>
+      <option value="Panasonic">Panasonic</option>
+      <option value="Alte marci">Alte marci</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="serialNumber" class="form-label">SerialNumber/IMEI:</label>
+    <input type="text" class="form-control" id="serialNumber" name="serialNumber" value="<%= repair.serialNumber %>" required>
+  </div>
+  <div class="mb-3">
+      <label for="defect" class="form-label">Defect reclamat:</label>
+      <input type="text" class="form-control" id="defect" name="defect" value="<%= repair.defect %>">
+  </div>

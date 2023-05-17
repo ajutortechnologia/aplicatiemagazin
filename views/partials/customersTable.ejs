@@ -23,7 +23,7 @@
                 <% for (let customer of customers) {%>
 
                   <tr>
-                    <td><a href="/"><%= customer.name %></a></td>
+                    <td><a href="/customers/<%= customer._id %>"><%= customer.name %></a></td>
                     <td><%= customer.phone %></td>
                     <td><%= customer.email %></td>
                     <td><%= customer.usedVoucher %></td>
