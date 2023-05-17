@@ -1,0 +1,16 @@
+<div class="mb-3">
+    <label for="name" class="form-label">Nume:</label>
+    <input type="text" class="form-control" id="name" name="name" value="<%= customer.name %>" required>
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Numar de telefon:</label>
+    <input type="tel" class="form-control" id="phone" name="phone" value="<%= customer.phone %>" required>
+  </div>
+  <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" value="<%= customer.email %>">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="voucher" name="usedVoucher">
+    <label class="form-check-label" for="voucher">Foloseste voucher</label>
+  </div>
